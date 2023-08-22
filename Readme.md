@@ -17,7 +17,8 @@
  - User Experience
 
 ## LIVE
-![Screenshot 2023-08-22 164414](https://github.com/NILESHSINGH234/Simon-Says-Game/assets/131458541/ca37fc77-b565-4f60-a7e2-11bb6e77c370)
+
+![Screenshot 2023-08-22 164414](https://github.com/NILESHSINGH234/Simon-Says-Game/assets/131458541/1eb85598-d6f1-4e49-877b-bbd6c56d9ce2)
 
 
 
