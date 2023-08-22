@@ -41,3 +41,43 @@ userSeq=[];
     gameFlash(randbtn);
 
 }
+function checkAns(idx)
+{
+    if(userSeq[idx]===gameSeq[idx])
+    {
+        if(userSeq.length==gameSeq.length)
+        {
+            setTimeout(levelUp,1000);
+        }
+    }
+    else{
+        h2.innerHTML=`game is over your score was <b> ${level}</b> press any key to start`;
+        document.querySelector("body").style.backgroundColor="red";
+           setTimeout(function()  {
+               document.querySelector("body").style.backgroundColor="white";
+           },150)
+        reset();
+    }
+}
+function btnPress()
+{
+    let btn=this;
+    userFlash(btn);
+    userColor=btn.getAttribute("id");
+    userSeq.push(userColor);
+    console.log(userSeq);
+    checkAns(userSeq.length-1);
+}
+
+let allBtns=document.querySelectorAll(".btn");
+for(btnn of allBtns)
+{
+    btnn.addEventListener("click",btnPress);
+}
+function reset()
+{
+    start=false;
+    level=0;
+    gameSeq=[];
+    userSeq=[];s
+}
